@@ -46,10 +46,10 @@ tmux new -d -s xray && \
 sleep 1 && \
 tmux send -t xray "~/tools/xray/xray" Enter && \
 sleep 1 && \
+cd && \
 echo "alias p='python3'" >> ~/.bash_aliases && \
 echo "alias c='source ~/tools/anaconda3/bin/activate && conda activate dev'" >> ~/.bash_aliases && \
 echo "alias x='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809'" >> ~/.bash_aliases && \
 echo "alias ux='unset http_proxy https_proxy'" >> ~/.bash_aliases && \
 source ~/.bash_aliases && \
-cd && \
 mkdir ~/workspace
