@@ -31,8 +31,6 @@ RUN apt update && \
     . ~/tools/anaconda3/bin/activate && \
     conda create -y -n dev python=3.12.0 && \
     conda deactivate && \
-    echo "alias c='source ~/tools/anaconda3/bin/activate && conda activate dev'" >> ~/.bash_aliases && \
-    echo "alias p='python3'" >> ~/.bash_aliases && \
     git clone https://github.com/dtwkac/yarx.git && \
     cp yarx/yarx.zip ~/tools && \
     rm -rf yarx && \
@@ -41,6 +39,8 @@ RUN apt update && \
     cd xray && \
     unzip Xray-linux-64.zip && \
     rm Xray-linux-64.zip && \
+    echo "alias p='python3'" >> ~/.bash_aliases && \
+    echo "alias c='source ~/tools/anaconda3/bin/activate && conda activate dev'" >> ~/.bash_aliases && \
     echo "alias x='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809'" >> ~/.bash_aliases && \
     echo "alias ux='unset http_proxy https_proxy'" >> ~/.bash_aliases
 
