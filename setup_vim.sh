@@ -25,7 +25,7 @@ echo "call plug#end()" >> ~/.vimrc
 sudo apt install -y python3-dev && \
 cd ~/.vim/plugged/YouCompleteMe && \
 python3 install.py --clangd-completer && \
+cd && \
 echo >> ~/.vimrc && \
 echo "let g:rainbow_active = 1" >> ~/.vimrc && \
-echo "set completeopt-=preview" >> ~/.vimrc && \
-cd
+echo "set completeopt-=preview" >> ~/.vimrc
