@@ -41,7 +41,8 @@ RUN apt update && \
     cd xray && \
     unzip Xray-linux-64.zip && \
     rm Xray-linux-64.zip && \
-    echo "alias x='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809'" >> ~/.bash_aliases
+    echo "alias x='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809'" >> ~/.bash_aliases && \
+    echo "alias ux='unset http_proxy https_proxy'" >> ~/.bash_aliases
 
 # RUN echo "root:password" | chpasswd && \
 #     apt install -y openssh-server && \
