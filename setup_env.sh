@@ -49,6 +49,7 @@ sleep 1 && \
 tmux send -t xray "~/tools/xray/xray" Enter && \
 sleep 1 && \
 echo "alias x='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809'" >> ~/.bash_aliases && \
+echo "alias ux='unset http_proxy https_proxy'" >> ~/.bash_aliases && \
 source ~/.bash_aliases && \
 cd && \
 mkdir workspace
