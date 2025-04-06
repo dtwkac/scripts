@@ -4,7 +4,7 @@ RUN apt update && \
     apt upgrade -y && \
     apt autoremove -y && \
     echo 'y' | unminimize && \
-    echo -e "\n6\n70" | apt install -y tzdata && \
+    echo -e '\n6\n70' | apt install -y tzdata && \
     apt install -y sudo man-db command-not-found bash-completion vim g++ cmake cgdb git wget unzip tmux language-pack-zh-hans && \
     apt update && \
     echo >> ~/.bashrc && \
@@ -55,9 +55,9 @@ RUN apt update && \
 # sudo usermod -aG docker $USER
 
 # sudo mkdir -p /etc/systemd/system/docker.service.d && \
-# sudo bash -c 'echo "[Service]" >> /etc/systemd/system/docker.service.d/http-proxy.conf' && \
-# sudo bash -c 'echo "Environment=\"HTTP_PROXY=http://127.0.0.1:10809\"" >> /etc/systemd/system/docker.service.d/http-proxy.conf' && \
-# sudo bash -c 'echo "Environment=\"HTTPS_PROXY=http://127.0.0.1:10809\"" >> /etc/systemd/system/docker.service.d/http-proxy.conf' && \
+# sudo bash -c "echo '[Service]' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
+# sudo bash -c "echo 'Environment=\"HTTP_PROXY=http://127.0.0.1:10809\"' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
+# sudo bash -c "echo 'Environment=\"HTTPS_PROXY=http://127.0.0.1:10809\"' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
 # sudo systemctl daemon-reload && \
 # sudo systemctl restart docker
 
