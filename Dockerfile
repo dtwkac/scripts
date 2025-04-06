@@ -4,7 +4,7 @@ RUN apt update && \
     apt upgrade -y && \
     apt autoremove -y && \
     echo 'y' | unminimize && \
-    echo -e '\n6\n70' | apt install -y tzdata && \
+    echo -e "\n6\n70" | apt install -y tzdata && \
     apt install -y sudo man-db command-not-found bash-completion vim g++ cmake cgdb git wget unzip tmux language-pack-zh-hans && \
     apt update && \
     echo >> ~/.bashrc && \
