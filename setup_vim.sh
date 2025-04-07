@@ -21,7 +21,7 @@ echo "Plug 'luochen1990/rainbow'" >> ~/.vimrc && \
 echo "Plug 'ycm-core/YouCompleteMe'" >> ~/.vimrc && \
 echo 'call plug#end()' >> ~/.vimrc
 
-# launch vim, input ':PlugInstall'
+# launch vim, input ":PlugInstall"
 sudo apt install -y python3-dev && \
 cd ~/.vim/plugged/YouCompleteMe && \
 python3 install.py --clangd-completer && \
