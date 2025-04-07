@@ -21,7 +21,7 @@ echo '  password ' >> ~/.netrc && \
 echo 'machine api.gitee.com' >> ~/.netrc && \
 echo '  login ' >> ~/.netrc && \
 echo '  password ' >> ~/.netrc && \
-echo "${win_id_rsa_pub}" >> ~/.ssh/authorized_keys && \
+echo ${win_id_rsa_pub} >> ~/.ssh/authorized_keys && \
 mkdir ~/tools && \
 cd ~/tools && \
 anaconda_version=2024.02-1 && \
