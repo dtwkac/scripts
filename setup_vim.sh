@@ -19,7 +19,7 @@ echo "Plug 'jiangmiao/auto-pairs'" >> ~/.vimrc && \
 echo "Plug 'luochen1990/rainbow'" >> ~/.vimrc && \
 echo "Plug 'ycm-core/YouCompleteMe'" >> ~/.vimrc && \
 echo 'call plug#end()' >> ~/.vimrc && \
-vim -c "PlugInstall" -c "qa" && \
+vim -c 'PlugInstall' -c 'qa' && \
 sudo apt install -y python3-dev && \
 cd ~/.vim/plugged/YouCompleteMe && \
 python3 install.py --clangd-completer && \
