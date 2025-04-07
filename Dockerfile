@@ -47,9 +47,9 @@ RUN apt update && \
 # RUN echo 'root:password' | chpasswd && \
 #     apt install -y openssh-server && \
 #     echo >> /etc/ssh/sshd_config && \
+#     echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
 #     echo 'ClientAliveInterval 60' >> /etc/ssh/sshd_config && \
 #     echo 'ClientAliveCountMax 3' >> /etc/ssh/sshd_config && \
-#     echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
 #     service ssh start
 
 # sudo usermod -aG docker $USER
