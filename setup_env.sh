@@ -6,8 +6,8 @@ sudo update-locale LANG=zh_CN.UTF-8 && \
 echo 'filetype plugin indent on' >> ~/.vimrc && \
 echo 'set expandtab' >> ~/.vimrc && \
 echo 'set shiftwidth=4' >> ~/.vimrc && \
-echo "au BufReadPost * if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") | exe \"normal! g'\\\"\" | endif" >> ~/.vimrc && \
 echo 'let loaded_matchparen = 1' >> ~/.vimrc && \
+echo "au BufReadPost * if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") | exe \"normal! g'\\\"\" | endif" >> ~/.vimrc && \
 echo 'machine github.com' >> ~/.netrc && \
 echo '  login ' >> ~/.netrc && \
 echo '  password ' >> ~/.netrc && \
