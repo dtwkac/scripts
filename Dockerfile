@@ -20,8 +20,8 @@ RUN apt update && \
     echo 'filetype plugin indent on' >> ~/.vimrc && \
     echo 'set expandtab' >> ~/.vimrc && \
     echo 'set shiftwidth=4' >> ~/.vimrc && \
-    echo "au BufReadPost * if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") | exe \"normal! g'\\\"\" | endif" >> ~/.vimrc && \
     echo 'let loaded_matchparen = 1' >> ~/.vimrc && \
+    echo "au BufReadPost * if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") | exe \"normal! g'\\\"\" | endif" >> ~/.vimrc && \
     mkdir ~/tools && \
     cd ~/tools && \
     anaconda_version=2024.02-1 && \
