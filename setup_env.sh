@@ -45,7 +45,6 @@ sed -i '56s/""/""/' config.json && \
 tmux new -d -s xray && \
 sleep 1 && \
 tmux send -t xray '~/tools/xray/xray' Enter && \
-sleep 1 && \
 cd && \
 echo "alias p='python3'" >> ~/.bash_aliases && \
 echo "alias c='source ~/tools/anaconda3/bin/activate && conda activate dev'" >> ~/.bash_aliases && \
