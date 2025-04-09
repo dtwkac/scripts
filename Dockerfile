@@ -52,13 +52,13 @@ RUN apt update && \
 #     echo 'ClientAliveCountMax 3' >> /etc/ssh/sshd_config && \
 #     service ssh start
 
-# sudo usermod -aG docker $USER && \
 # sudo mkdir -p /etc/systemd/system/docker.service.d && \
 # sudo bash -c "echo '[Service]' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
 # sudo bash -c "echo 'Environment=\"HTTP_PROXY=http://127.0.0.1:10809\"' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
 # sudo bash -c "echo 'Environment=\"HTTPS_PROXY=http://127.0.0.1:10809\"' >> /etc/systemd/system/docker.service.d/http-proxy.conf" && \
 # sudo systemctl daemon-reload && \
-# sudo systemctl restart docker
+# sudo systemctl restart docker && \
+# sudo usermod -aG docker $USER
 
 # docker build -t playground .
 # docker run --name temp --network host -e DISPLAY -v ~/.Xauthority:/root/.Xauthority:ro --rm -it playground bash
