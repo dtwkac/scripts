@@ -63,5 +63,5 @@ RUN apt update && \
 # docker build -t playground .
 # docker run --name temp --network host -e DISPLAY -v ~/.Xauthority:/root/.Xauthority:ro --rm -it playground bash
 # docker run --name container -h container -v /host/path:/container/path -dit playground bash
-# docker run --name container -h container -p 50001:22 -v /host/path:/container/path --shm-size=8g -d playground /usr/sbin/sshd -D
+# docker run --name container -h container -p 50001:22 -v /host/path:/container/path --shm-size 8g -d playground /usr/sbin/sshd -D
 # ssh -p 50001 root@{host_ip}
