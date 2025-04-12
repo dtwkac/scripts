@@ -21,6 +21,7 @@ echo '  password ' >> ~/.netrc && \
 echo 'machine api.gitee.com' >> ~/.netrc && \
 echo '  login ' >> ~/.netrc && \
 echo '  password ' >> ~/.netrc && \
+win_id_rsa_pub='' && \
 echo ${win_id_rsa_pub} >> ~/.ssh/authorized_keys && \
 mkdir ~/tools && \
 cd ~/tools && \
